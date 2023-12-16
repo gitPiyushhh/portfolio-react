@@ -1,0 +1,68 @@
+.about {
+  width: 70vw;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__left {
+    display: block;
+    background: url("./../../public/assets/about.jpg");
+    width: 32%;
+    height: 22.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1.6rem;
+  }
+
+  &__right {
+    width: 60%;
+  }
+
+  &__card {
+    background-color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 1rem;
+    color: var(--title-color-dark);
+  }
+
+  &__number {
+    font-size: 0.8rem;
+    color: var(--text-color-dark);
+    margin-top: 0.28rem;
+  }
+
+  &__badge {
+    font-size: 2.4rem;
+  }
+
+  &__cardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    margin-top: 2.4rem;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.8rem;
+    box-shadow: var(--shadow);
+  }
+}

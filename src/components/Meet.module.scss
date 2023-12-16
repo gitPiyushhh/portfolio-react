@@ -1,0 +1,16 @@
+.meet {
+  width: fit-content;
+  position: fixed;
+  bottom: 2.4rem;
+  right: 2.4rem;
+  background-color: #fff;
+  color: var(--text-color-dark);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+  box-shadow: var(--shadow);
+
+  &__icon {
+    margin-left: 0.8rem;
+  }
+}

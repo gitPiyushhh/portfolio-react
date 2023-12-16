@@ -1,0 +1,115 @@
+.hero {
+  width: 70vw;
+  margin: 11rem auto 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+
+  &__left {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 1.4rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      color: #000;
+    }
+  }
+
+  &__button {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__middle {
+    width: 50%;
+  }
+
+  &__heading {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  &__subheading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 1rem;
+    padding-left: 5rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 4.2rem;
+      height: 1px;
+      background-color: var(--text-color);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__about {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    opacity: 0.87;
+    margin-top: 1rem;
+  }
+
+  &__button {
+    margin-top: 2.4rem;
+    box-shadow: var(--shadow);
+  }
+
+  &__img {
+    background: url("./../../public/assets/profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18rem;
+    height: 18rem;
+    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+    order: 1;
+    justify-self: center;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: profile_animate 8s ease-in-out infinite 1s;
+  }
+
+  &__send {
+    font-size: 4rem;
+  }
+}
+
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}

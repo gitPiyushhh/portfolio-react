@@ -1,0 +1,27 @@
+.projects {
+    width: 72vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__tagContainer {
+        width: 36%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__tag {
+        padding: 0.4rem 1.6rem;
+        border-radius: 5px;
+        color: var(--title-color);
+        cursor: pointer;
+    }
+}
+
+.active {
+    background-color: var(--title-color);
+    color: var(--body-color);
+}

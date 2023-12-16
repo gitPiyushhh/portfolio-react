@@ -1,0 +1,54 @@
+.qualificationBox {
+    width: 100%;
+    padding: 0rem 1.6rem;
+    margin-top: 60%;
+    text-align: left;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -37px;
+        top: 0;
+        border-radius: 50%;
+        background-color: var(--title-color);
+    }
+
+    &::before {
+        content: '';
+        width: 2px;
+        height: 140%;
+        position: absolute;
+        left: -33px;
+        top: 0;
+        border-radius: 5px;
+        background-color: grey;
+        opacity: 0.7;
+    }
+
+    &__heading {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--title-color);
+    }
+
+    &__subheading {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    &__time {
+        display: block;
+        font-size: 0.8rem;
+        margin-top: 0.6rem;
+    }
+
+    &__icon {
+        font-size: 0.8rem;
+        margin-right: 0.4rem;
+    }
+}
+

@@ -1,0 +1,36 @@
+.scroll {
+    width: fit-content;
+    // margin-left: 8rem;
+
+    &__text {
+        font-size: 1rem;
+        color: var(--title-color);
+    }
+
+    &__arrow {
+        font-size: 1rem;
+        color: var(--title-color);
+    }
+}
+
+.uFlex {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wheel {
+    animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(3.75rem);
+    }
+} 

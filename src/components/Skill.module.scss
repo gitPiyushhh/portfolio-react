@@ -1,0 +1,18 @@
+.skill {
+  &__container {
+    width: 22rem;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    background-color: #fff;
+  }
+
+  &__heading {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--title-color-dark);
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    text-align: center;
+  }
+}
